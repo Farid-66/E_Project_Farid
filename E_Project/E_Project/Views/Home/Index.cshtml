@@ -1,0 +1,163 @@
+﻿@model VmHome
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<main>
+    <section id="services">
+        <div class="container">
+            <div class="row">
+                <h2>OUR SERVICES :</h2>
+                <div class="col-lg-6 col-sm-12">
+                    <h3>Lorem ipsum dolor sit amet</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nec nisl odio. Mauris
+                        vehicula at nunc id posuere. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Curabitur nec nisl odio. Mauris vehicula at nunc id posuere.
+                    </p>
+                </div>
+                <div class="col-lg-6 col-sm-12">
+                    <h3>Lorem ipsum dolor sit amet</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nec nisl odio. Mauris
+                        vehicula at nunc id posuere. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Curabitur nec nisl odio. Mauris vehicula at nunc id posuere.
+                    </p>
+                </div>
+            </div>
+            <div class="row service">
+
+
+                @foreach (var item in Model.Services)
+                {
+                    <div class="col-lg-4  col-sm-12 mb-4">
+                        <div class="services_card">
+                            <div class="icon">
+                                <i class="@item.Icon"></i>
+                            </div>
+                            <div class="card_title">
+                                <h3>@item.Title</h3>
+                            </div>
+                            <div class="content">
+                                <p>
+                                    @item.Content
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                }
+
+
+
+                <div class="row">
+                    <div class="col-12">
+                        <h3>Lorem ipsum dolor sit amet</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nec nisl odio. Mauris
+                            vehicula at nunc id posuere. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Curabitur nec nisl odio. Mauris vehicula at nunc id posuere. Lorem ipsum dolor sit amet,
+                            consectetur adipiscing elit. Curabitur nec nisl odio. Mauris vehicula at nunc id posuere.
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nec nisl odio. Mauris
+                            vehicula at nunc id posuere. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Curabitur nec nisl odio. Mauris vehicula at nunc id posuere. Lorem ipsum dolor sit amet,
+                            consectetur adipiscing elit. Curabitur nec nisl odio. Mauris vehicula at nunc id posuere.
+                        </p>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <section id="blue1">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-sm-12">
+                    <h2>Featured In Wall Street</h2>
+                    <p>and many other magzines..</p>
+                </div>
+                <div class="col-lg-4 col-sm-12">
+                    <h2>300+</h2>
+                    <p>Reports</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="blue2">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-sm-12">
+                    <h2>5000+</h2>
+                    <p>Projects</p>
+                </div>
+
+                <div class="col-lg-3 col-sm-12">
+                    <h2>205+</h2>
+                    <p>Reports</p>
+                </div>
+                <div class="col-lg-3 col-sm-12">
+                    <h2>1300+</h2>
+                    <p>Offices</p>
+                </div>
+                <div class="col-lg-3 col-sm-12">
+                    <h2>2400+</h2>
+                    <p>Clients</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <div class="row">
+                <h2>CONTACT US :</h2>
+                <div class="col-lg-6 col-sm-12">
+                    <h3>Lorem ipsum dolor sit amet</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nec nisl odio. Mauris
+                        vehicula at nunc id posuere. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Curabitur nec nisl odio. Mauris vehicula at nunc id posuere.
+                    </p>
+                </div>
+                <div class="col-lg-6 col-sm-12">
+                    <h3>Lorem ipsum dolor sit amet</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nec nisl odio. Mauris
+                        vehicula at nunc id posuere. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Curabitur nec nisl odio. Mauris vehicula at nunc id posuere.
+                    </p>
+                </div>
+            </div>
+
+            <div class="row contact">
+                <div class="col-lg-6 col-sm-12">
+                    <form>
+                        <div class="row">
+                            <div class="col-md-6 col-sm-12">
+                                <div class="mb-3">
+                                    <input type="taxt" placeholder="Name" class="form-control">
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-sm-12">
+                                <div class="mb-3">
+                                    <input type="email" placeholder="Email Address..." class="form-control" id="exampleInputEmail1"
+                                           aria-describedby="emailHelp">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mb-3">
+                            <textarea class="form-control" placeholder="Message"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit Request</button>
+                    </form>
+                </div>
+                <div class="col-lg-6">
+                    <p> <b>Address:</b> 123,Your locality , Counrty Name, Pin-20100090.</p>
+                    <p> <b>Email:</b> info@yourdomain.com</p>
+                    <p> <b>Web:</b> www.yourdomain.com</p>
+                    <p> <b>Mobile:</b> +00-909-808-707-00</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>

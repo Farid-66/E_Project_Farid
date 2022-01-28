@@ -1,0 +1,16 @@
+
+
+footer{
+    background-color: #000000;
+    padding: 20px 0px;
+    .container{
+        #footer{
+            display: flex;
+            justify-content: flex-end;
+            p{
+                color: white;
+                margin: unset;
+            }
+        }
+    }
+}

@@ -1,0 +1,307 @@
+
+
+main{
+    #services{
+        .container{
+            padding: 70px 0px;
+            .row{
+                h2{
+                    font-size: 40px;
+                    font-family: $font-family;
+                    font-weight: 600;
+                    color: $bg-color;
+                }
+    
+                .col-lg-6{
+                    h3{
+                        font-size: 30px;
+                        font-weight: 400;
+                        font-family: $font-family;
+                        margin: 20px 0px 10px 0px;
+                        color: rgb(51, 51, 51);
+                    }
+                    p{
+                        font-family: $font-family;
+                        font-size: 14px; 
+                        font-weight: 400;
+                        line-height: 30px;
+                    }
+                }
+
+                .col-12{
+                    p{
+                        font-size: 14px;
+                        font-weight: 300;
+                        font-family: $font-family;
+                        line-height: 35px;
+                    }
+                }
+            }
+
+            .row{
+                padding-bottom: 40px;
+                .col-lg-4{
+                    .services_card{
+                        background-color: $bg-color;
+                        padding: 45px 20px;
+                        text-align: center;
+
+                        .icon{
+                            i{
+                                color: white;
+                                font-size: 80px;
+                            }
+                        }
+
+                        h3{
+                            color: white;
+                            margin: 10px 0px;
+                            padding: 15px 0px;
+                            font-size: 22px; 
+                            font-family: $font-family;
+                            font-weight: 500;
+                        }
+
+                        p{
+                            color: white;
+                            font-size: 16px;
+                            line-height: 30px;
+                            font-weight: 300;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    #blue1{
+        padding: 20px 0px;
+        background-color: $bg-color;
+        text-align: center;
+        .container{
+            .row{
+                .col-lg-8{
+                    h2{
+                        font-size: 60px;
+                        font-weight: 500;
+                        font-family: $font-family;
+                        color: white;
+                        padding: 30px;
+                    }
+                    p{
+                        font-size: 22px; 
+                        font-weight: 400;
+                        color: white;
+                    }
+                }
+                .col-lg-4{
+                    h2{
+                        font-size: 60px;
+                        font-weight: 500;
+                        font-family: $font-family;
+                        color: white;
+                        padding: 30px;
+                    }
+                    p{
+                        font-size: 22px; 
+                        font-weight: 400;
+                        color: white;
+                    }
+                }
+            }
+        } 
+    }
+
+    #blue2{
+        margin-top: 70px;
+        padding: 20px 0px;
+        background-color: $bg-color;
+        text-align: center;
+
+        .container{
+            .row{
+                .col-lg-3{
+                    h2{
+                        font-size: 60px;
+                        font-weight: 500;
+                        font-family: $font-family;
+                        color: white;
+                        padding: 25px;
+                    }
+                    p{
+                        font-size: 22px; 
+                        font-weight: 400;
+                        color: white;
+                    }
+                }
+            }
+        }
+    }
+
+    #contact{
+        .container{
+            padding: 70px 0px;
+            .row{
+                h2{
+                    font-size: 40px;
+                    font-family: $font-family;
+                    font-weight: 600;
+                    color: $bg-color;
+                }
+    
+                .col-lg-6{
+                    h3{
+                        font-size: 30px;
+                        font-weight: 400;
+                        font-family: $font-family;
+                        margin: 20px 0px 10px 0px;
+                        color: rgb(51, 51, 51);
+                    }
+                    p{
+                        font-family: $font-family;
+                        font-size: 14px; 
+                        font-weight: 400;
+                        line-height: 30px;
+                    }
+                }
+
+                .col-12{
+                    p{
+                        font-size: 14px;
+                        font-weight: 300;
+                        font-family: $font-family;
+                        line-height: 35px;
+                    }
+                }
+            }
+
+            .contact{
+                padding:40px 0px 20px 0px;
+                .col-lg-6{
+                    form{
+                        input{
+                            background:transparent;
+                        }
+
+                        textarea{
+                            height: 85px !important;
+                            resize: none;
+                            background: transparent;
+                        }
+
+                        button{
+                            border: unset;
+                            background-color: #428bca;
+
+                            &:hover{
+                                background-color: rgba(66, 139, 202,0.8);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media(max-width:992px){
+    main{
+        padding: 0px 12px;
+        #services{
+            .container{
+                padding: 70px 0px;
+                .row{
+                    h2{
+                        font-size:40px;
+                    }
+                    .col-lg-6{
+                        h3{
+                            font-size: 30px;
+                            margin: 15px 0px 5px 0px;
+                        }
+                    }
+
+                    .col-lg-4{
+                        padding: 10px 12px !important;
+                    }
+                }
+            }
+        }
+    
+        #blue1{
+            padding: 20px 0px;
+            background-color: $bg-color;
+            text-align: center;
+            .container{
+                .row{
+                    .col-lg-8{
+                        h2{
+                            font-size: 40px;
+                            padding: 25px;
+                        }
+                        p{
+                            font-size: 18px; 
+                        }
+                    }
+                    .col-lg-4{
+                        
+                        h2{
+                            font-size: 40px;
+                            padding: 25px;
+                        }
+                        p{
+                            font-size: 18px; 
+                        }
+                    }
+                }
+            } 
+        }
+    
+        #blue2{
+            margin-top: 70px;
+            padding: 20px 0px;
+            background-color: $bg-color;
+            text-align: center;
+    
+            .container{
+                .row{
+                    .col-lg-3{
+                        h2{
+                            font-size: 40px;
+                            padding: 25px;
+                        }
+                        p{
+                            font-size: 18px; 
+                        }
+                    }
+                }
+            }
+        }
+    
+        #contact{
+            .container{
+                padding: 70px 0px;
+                .row{
+                    h2{
+                        font-size: 30px;
+                    }
+        
+                    .col-lg-6{
+                        h3{
+                            font-size: 25px;
+                            margin: 15px 0px 5px 0px;
+                        }
+                    }
+                }
+    
+                .contact{
+                    padding:40px 0px 20px 0px;
+                    .col-lg-6{
+                        padding: 10px 12px;
+                    }
+                }
+            }
+        }
+    }
+}

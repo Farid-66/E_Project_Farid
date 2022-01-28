@@ -1,0 +1,423 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap");
+header nav {
+  position: fixed !important;
+  width: 100%;
+  background-color: #000000 !important;
+}
+
+header nav .container .navbar-brand {
+  color: white !important;
+  font-size: 25px;
+  font-weight: 600;
+  font-family: "Open Sans", sans-serif;
+}
+
+header nav .container button span {
+  color: white !important;
+}
+
+header nav .container .collapse {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+header nav .container .collapse .navbar-nav .nav-item .nav-link {
+  color: white !important;
+  padding: 15px;
+}
+
+header #title {
+  background-color: #00798a;
+}
+
+header #title .container .row .col-12 {
+  height: 650px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header #title .container .row .col-12 div {
+  text-align: center;
+}
+
+header #title .container .row .col-12 div h1 {
+  font-size: 80px;
+  font-weight: 600;
+  color: white;
+  font-family: "Open Sans", sans-serif;
+}
+
+header #title .container .row .col-12 div h2 {
+  margin: 20px 0px 10px 0px;
+  font-size: 40px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  padding: 5px 0px 10px 0px;
+  color: white;
+}
+
+header #title .container .row .col-12 div h3 {
+  margin: 5px 0px 20px 0px;
+  font-size: 20px;
+  font-weight: 300;
+  font-family: "Open Sans", sans-serif;
+  padding: 5px 0px 20px 0px;
+  color: white;
+}
+
+header #title .container .row .col-12 div a {
+  display: inline-block;
+  text-decoration: none;
+  padding: 10px 16px;
+  background-color: #fc4065;
+  color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  margin-top: 20px;
+}
+
+header #title .container .row .col-12 div a:hover {
+  background-color: rgba(252, 64, 101, 0.8);
+}
+
+@media (max-width: 992px) {
+  header nav {
+    position: 13px !important;
+  }
+  header nav .container button {
+    border: 1px solid white;
+    padding: 8px;
+  }
+  header nav .container button span {
+    width: 20px;
+    height: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  header nav .container button span .line {
+    width: 100%;
+    height: 2px;
+    background-color: white;
+  }
+  header nav .container .collapse {
+    display: none;
+  }
+  header #title .container .row .col-12 div {
+    text-align: center;
+  }
+  header #title .container .row .col-12 div h1 {
+    font-size: 50px;
+    font-weight: 500;
+  }
+  header #title .container .row .col-12 div h2 {
+    margin: 15px 0px 5px 0px;
+    font-size: 40px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    padding: 0px 0px 5px 0px;
+    color: white;
+  }
+  header #title .container .row .col-12 div h3 {
+    margin-bottom: 15px;
+    font-size: 16px;
+    padding-bottom: 15px;
+  }
+  header #title .container .row .col-12 div a {
+    display: inline-block;
+    text-decoration: none;
+    padding: 10px 16px;
+    background-color: #fc4065;
+    color: white;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+    margin-top: 20px;
+  }
+  header #title .container .row .col-12 div a:hover {
+    background-color: rgba(252, 64, 101, 0.8);
+  }
+}
+
+main #services .container {
+  padding: 70px 0px;
+}
+
+main #services .container .row h2 {
+  font-size: 40px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  color: #00798a;
+}
+
+main #services .container .row .col-lg-6 h3 {
+  font-size: 30px;
+  font-weight: 400;
+  font-family: "Open Sans", sans-serif;
+  margin: 20px 0px 10px 0px;
+  color: #333333;
+}
+
+main #services .container .row .col-lg-6 p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 30px;
+}
+
+main #services .container .row .col-12 p {
+  font-size: 14px;
+  font-weight: 300;
+  font-family: "Open Sans", sans-serif;
+  line-height: 35px;
+}
+
+main #services .container .row {
+  padding-bottom: 40px;
+}
+
+main #services .container .row .col-lg-4 .services_card {
+  background-color: #00798a;
+  padding: 45px 20px;
+  text-align: center;
+}
+
+main #services .container .row .col-lg-4 .services_card .icon i {
+  color: white;
+  font-size: 80px;
+}
+
+main #services .container .row .col-lg-4 .services_card h3 {
+  color: white;
+  margin: 10px 0px;
+  padding: 15px 0px;
+  font-size: 22px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 500;
+}
+
+main #services .container .row .col-lg-4 .services_card p {
+  color: white;
+  font-size: 16px;
+  line-height: 30px;
+  font-weight: 300;
+}
+
+main #blue1 {
+  padding: 20px 0px;
+  background-color: #00798a;
+  text-align: center;
+}
+
+main #blue1 .container .row .col-lg-8 h2 {
+  font-size: 60px;
+  font-weight: 500;
+  font-family: "Open Sans", sans-serif;
+  color: white;
+  padding: 30px;
+}
+
+main #blue1 .container .row .col-lg-8 p {
+  font-size: 22px;
+  font-weight: 400;
+  color: white;
+}
+
+main #blue1 .container .row .col-lg-4 h2 {
+  font-size: 60px;
+  font-weight: 500;
+  font-family: "Open Sans", sans-serif;
+  color: white;
+  padding: 30px;
+}
+
+main #blue1 .container .row .col-lg-4 p {
+  font-size: 22px;
+  font-weight: 400;
+  color: white;
+}
+
+main #blue2 {
+  margin-top: 70px;
+  padding: 20px 0px;
+  background-color: #00798a;
+  text-align: center;
+}
+
+main #blue2 .container .row .col-lg-3 h2 {
+  font-size: 60px;
+  font-weight: 500;
+  font-family: "Open Sans", sans-serif;
+  color: white;
+  padding: 25px;
+}
+
+main #blue2 .container .row .col-lg-3 p {
+  font-size: 22px;
+  font-weight: 400;
+  color: white;
+}
+
+main #contact .container {
+  padding: 70px 0px;
+}
+
+main #contact .container .row h2 {
+  font-size: 40px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  color: #00798a;
+}
+
+main #contact .container .row .col-lg-6 h3 {
+  font-size: 30px;
+  font-weight: 400;
+  font-family: "Open Sans", sans-serif;
+  margin: 20px 0px 10px 0px;
+  color: #333333;
+}
+
+main #contact .container .row .col-lg-6 p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 30px;
+}
+
+main #contact .container .row .col-12 p {
+  font-size: 14px;
+  font-weight: 300;
+  font-family: "Open Sans", sans-serif;
+  line-height: 35px;
+}
+
+main #contact .container .contact {
+  padding: 40px 0px 20px 0px;
+}
+
+main #contact .container .contact .col-lg-6 form input {
+  background: transparent;
+}
+
+main #contact .container .contact .col-lg-6 form textarea {
+  height: 85px !important;
+  resize: none;
+  background: transparent;
+}
+
+main #contact .container .contact .col-lg-6 form button {
+  border: unset;
+  background-color: #428bca;
+}
+
+main #contact .container .contact .col-lg-6 form button:hover {
+  background-color: rgba(66, 139, 202, 0.8);
+}
+
+@media (max-width: 992px) {
+  main {
+    padding: 0px 12px;
+  }
+  main #services .container {
+    padding: 70px 0px;
+  }
+  main #services .container .row h2 {
+    font-size: 40px;
+  }
+  main #services .container .row .col-lg-6 h3 {
+    font-size: 30px;
+    margin: 15px 0px 5px 0px;
+  }
+  main #services .container .row .col-lg-4 {
+    padding: 10px 12px !important;
+  }
+  main #blue1 {
+    padding: 20px 0px;
+    background-color: #00798a;
+    text-align: center;
+  }
+  main #blue1 .container .row .col-lg-8 h2 {
+    font-size: 40px;
+    padding: 25px;
+  }
+  main #blue1 .container .row .col-lg-8 p {
+    font-size: 18px;
+  }
+  main #blue1 .container .row .col-lg-4 h2 {
+    font-size: 40px;
+    padding: 25px;
+  }
+  main #blue1 .container .row .col-lg-4 p {
+    font-size: 18px;
+  }
+  main #blue2 {
+    margin-top: 70px;
+    padding: 20px 0px;
+    background-color: #00798a;
+    text-align: center;
+  }
+  main #blue2 .container .row .col-lg-3 h2 {
+    font-size: 40px;
+    padding: 25px;
+  }
+  main #blue2 .container .row .col-lg-3 p {
+    font-size: 18px;
+  }
+  main #contact .container {
+    padding: 70px 0px;
+  }
+  main #contact .container .row h2 {
+    font-size: 30px;
+  }
+  main #contact .container .row .col-lg-6 h3 {
+    font-size: 25px;
+    margin: 15px 0px 5px 0px;
+  }
+  main #contact .container .contact {
+    padding: 40px 0px 20px 0px;
+  }
+  main #contact .container .contact .col-lg-6 {
+    padding: 10px 12px;
+  }
+}
+
+footer {
+  background-color: #000000;
+  padding: 20px 0px;
+}
+
+footer .container #footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+footer .container #footer p {
+  color: white;
+  margin: unset;
+}
+
+body {
+  background-image: url(Image/sativa.png);
+}
+/*# sourceMappingURL=Style.css.map */

@@ -1,0 +1,162 @@
+
+
+header{
+    nav{
+        position: fixed !important;
+        width: 100%;
+        background-color: #000000 !important;
+        .container{
+            .navbar-brand{
+                color: white !important;
+                font-size: 25px;
+                font-weight: 600;
+                font-family: $font-family;
+            }
+
+            button{
+                span{
+                    color: white !important;
+                }
+            }
+
+            .collapse{
+                display: flex;
+                justify-content: flex-end;
+                .navbar-nav{
+                    .nav-item{
+                        .nav-link{
+                            color: white !important;
+                            padding: 15px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+    #title{
+        background-color: $bg-color;
+        .container{
+            .row{
+                .col-12{
+                    height: 650px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    div{
+                        text-align: center;
+                        h1{
+                            font-size: 80px;
+                            font-weight: 600;
+                            color: white;
+                            font-family: $font-family;
+                        }
+                        h2{
+                            margin: 20px 0px 10px 0px;
+                            font-size: 40px;
+                            font-family: $font-family;
+                            font-weight: 400;
+                            padding: 5px 0px 10px 0px;
+                            color: white;
+                        }
+                        h3{
+                            margin: 5px 0px 20px 0px;
+                            font-size: 20px;
+                            font-weight: 300;
+                            font-family: $font-family;
+                            padding: 5px 0px 20px 0px;
+                            color: white;
+                        }
+                        a{
+                            display: inline-block;
+                            text-decoration: none;
+                            padding: 10px 16px;
+                            background-color: rgb(252, 64, 101);
+                            color: white;
+                            transition: 0.4s;
+                            margin-top: 20px;
+
+                            &:hover{
+                                background-color: rgba(252, 64, 101,0.8);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+@media(max-width:992px){
+    header{
+        nav{
+            position:13px !important;
+            .container{
+                button{
+                    border: 1px solid white;
+                    padding: 8px;
+                    span{
+                        width: 20px;
+                        height: 20px;
+                        display: flex;
+                        justify-content: space-between;
+                        flex-direction: column;
+                        .line{
+                            width: 100%;
+                            height: 2px;
+                            background-color: white;
+                        }
+                    }
+                }
+                .collapse{
+                    display: none;
+                }
+            }
+        }
+        #title{
+            .container{
+                .row{
+                    .col-12{
+                        div{
+                            text-align: center;
+                            h1{
+                                font-size: 50px;
+                                font-weight: 500;
+                            }
+                            h2{
+                                margin: 15px 0px 5px 0px;
+                                font-size: 40px;
+                                font-family: $font-family;
+                                font-weight: 400;
+                                padding: 0px 0px 5px 0px;
+                                color: white;
+                            }
+                            h3{
+                                margin-bottom:15px;
+                                font-size: 16px;
+                                padding-bottom:15px;
+                            }
+                            a{
+                                display: inline-block;
+                                text-decoration: none;
+                                padding: 10px 16px;
+                                background-color: rgb(252, 64, 101);
+                                color: white;
+                                transition: 0.4s;
+                                margin-top: 20px;
+    
+                                &:hover{
+                                    background-color: rgba(252, 64, 101,0.8);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

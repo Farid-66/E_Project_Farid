@@ -1,0 +1,60 @@
+﻿@model VmHome
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Areas/admin/Views/Shared/_Layout.cshtml";
+}
+
+<div class="row">
+
+    <div class="col-12">
+        <div class="card shadow mb-4">
+            <div class="card-header py-3">
+                <h6 class="m-0 font-weight-bold text-primary">Setting</h6>
+            </div>
+            <div class="card-body">
+                <h6><b>Site Name: </b>@Model.Setting.SiteName</h6>
+                <h6><b>Title: </b>@Model.Setting.Title</h6>
+                <h6><b>TitleContent 1: </b>@Model.Setting.TitleContent1</h6>
+                <h6><b>TitleContent 2: </b>@Model.Setting.TitleContent1</h6>
+                <h6><b>Address: </b>@Model.Setting.Address</h6>
+                <h6><b>Phone: </b>@Model.Setting.Phone</h6>
+                <h6><b>Email: </b>@Model.Setting.Email</h6>
+                <h6><b>Web: </b>@Model.Setting.Web</h6>
+
+                <div class="my-3">
+                <a asp-controller="Settings" asp-action="Edit" asp-route-id="@Model.Setting.Id" class="btn btn-warning rounded"><i class="fas fa-edit"></i></a> 
+            </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Approach -->
+
+    @foreach (var item in Model.Services)
+    {
+<div class="col-3">
+    <div class="card shadow mb-4">
+        <div class="card-header d-flex justify-content-between py-3">
+            <h6 class="m-0 font-weight-bold text-primary">@item.Title</h6>
+            <h6 class="m-0 font-weight-bold text-primary">@item.CreateDate.ToString("MM/dd/yyyy hh:mm")</h6>
+        </div>
+        <div class="card-body">
+            <div class="text-center my-4 ">
+                <i style="font-size: 80px;color: #4e73df;" class="@item.Icon"></i>
+            </div>
+            <p>
+                @item.Content
+            </p>
+
+            <div class="my-3">
+                <a asp-controller="Services" asp-action="Edit" asp-route-id="@item.Id" class="btn btn-warning rounded"><i class="fas fa-edit"></i></a>
+                <a asp-controller="Services" asp-action="Delete" asp-route-id="@item.Id" class="btn btn-danger rounded"><i class="fas fa-trash"></i></a>
+            </div>
+        </div>
+        
+    </div>
+</div>
+    }
+
+</div>
+
